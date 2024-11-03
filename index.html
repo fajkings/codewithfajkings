@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <title>Document</title>
+  <style>
+    footer {
+      height: 100px;
+      text-align: center;
+      background-color: black;
+      color: wheat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .hero-text {
+      margin-left: 20px;
+    }
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+    .carousel-caption .btn {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fajkings</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Disabled</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Image and Typed.js -->
+    <div class="hero-section">
+      <img
+        src="assets/code.jfif"
+        class="w-50"
+        alt="Coding Image"
+        style="margin-left: 400px"
+      />
+      <div class="hero-text">
+        <h2 id="typed-output"></h2>
+      </div>
+    </div>
+
+    <!-- Card Section -->
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="card shadow mb-4">
+          <img src="assets/ahmad.jpg" class="card-img-top" alt="Photo of Ahmad" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              My name is Ahmad Javed and this is my photo. This is my
+              <a href="https://www.youtube.com/@khani-Doll">YouTube channel</a>.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow mb-4">
+          <img src="assets/faisal.jpg" class="card-img-top" alt="Photo of Faisal" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Hello friends! My name is Faisal.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow mb-4">
+          <img src="assets/beautiful.jpg" class="card-img-top" alt="Beautiful Scene" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">We are brothers and friends.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-5">
+      <div class="card shadow mb-4">
+        <img src="assets/brother.jpg" class="card-img-top" alt="Brothers" />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is my life, and we are just like friends.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing Plans Section -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Pricing Plans</h2>
+      <div class="row text-center">
+        <!-- Starter Plan -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <h5 class="card-title">Starter</h5>
+              <h6 class="card-price">$50/month</h6>
+              <p class="card-text">Ideal for individuals and small businesses.</p>
+              <ul class="list-unstyled">
+                <li>Basic SEO</li>
+                <li>Social Media Management</li>
+                <li>5 Support Tickets/Month</li>
+              </ul>
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <!-- Professional Plan -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <h5 class="card-title">Professional</h5>
+              <h6 class="card-price">$100/month</h6>
+              <p class="card-text">Great for growing businesses.</p>
+              <ul class="list-unstyled">
+                <li>Advanced SEO</li>
+                <li>Email Marketing</li>
+                <li>Priority Support</li>
+              </ul>
+              <a href="#" class="btn btn-primary">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+        <!-- Enterprise Plan -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <h5 class="card-title">Enterprise</h5>
+              <h6 class="card-price">$200/month</h6>
+              <p class="card-text">Perfect for large businesses and custom needs.</p>
+              <ul class="list-unstyled">
+                <li>Dedicated Account Manager</li>
+                <li>Full Social Media Suite</li>
+                <li>Unlimited Support</li>
+              </ul>
+              <a href="#" class="btn btn-primary">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordion Section -->
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default.
+          </div>
+        </div>
+      </div>
+      <!-- Add additional accordion items as needed -->
+    </div>
+
+    <!-- Carousel Section -->
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/industry.jfif" class="w-100 d-block" alt="Industry Image" />
+          <div class="carousel-caption d-none d-md-block">
+            <button class="btn btn-primary">Join Us</button>
+            <p>Explore the industry with us.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/academy.jfif" class="w-100 d-block" alt="Academy Image" />
+          <div class="carousel-caption d-none d-md-block">
+            <button class="btn btn-primary">Join Us</button>
+            <p>Gain knowledge with our academy.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/shop.jfif" class="w-100 d-block" alt="Shop Image" />
+          <div class="carousel-caption d-none d-md-block">
+            <button class="btn btn-primary">Join Us</button>
+            <p>Shop our latest products.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Fajkings. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap and Typed.js Scripts -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var options = {
+      strings: ["Welcome to our site!", "Explore our features!", "Check our pricing!"],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true,
+    };
+    var typed = new Typed("#typed-output", options);
+  </script>
+</body>
+</html>
